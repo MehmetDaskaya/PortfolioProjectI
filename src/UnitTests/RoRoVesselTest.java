@@ -1,4 +1,4 @@
-package Vessels;
+package UnitTests;
 
 import static org.junit.Assert.*;
 

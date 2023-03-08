@@ -1,7 +1,8 @@
-package Vessels;
+package UnitTests;
 
 import static org.junit.Assert.assertEquals;
 
+import Vessels.ContainerVessel;
 import org.junit.Before;
 import org.junit.Test;
 
