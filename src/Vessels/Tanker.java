@@ -16,6 +16,10 @@ public class Tanker extends Vessel {
 			System.out.println("Incorrect String!");
 			return;
 		}
+		if (number <= 0) {
+			System.out.println("Invalid number");
+			return;
+		}
 		if (used[Integer.parseInt(s) - 1] + number > capacity) {
 			System.out.println("Tanker does not have enough space");
 		} else {

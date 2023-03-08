@@ -42,4 +42,10 @@ class TankerTest {
         }
         assertEquals(1.0, tanker.loadFraction());
     }
+    @Test
+    void testLoadCargoWithZeroOrNegativeNumber() {
+        Tanker tanker = new Tanker("B1", 200);
+        tanker.loadingCargo(-2, "5");
+        assertEquals(0.0, tanker.loadFraction());
+    }
 }
