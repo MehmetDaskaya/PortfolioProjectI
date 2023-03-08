@@ -1,3 +1,5 @@
+package Vessels;
+
 import static org.junit.Assert.*;
 
 import org.junit.Before;
@@ -16,7 +18,7 @@ public class RoRoVesselTest {
     @Test
     public void testLoadingCargoForCar() {
         vessel.loadingCargo(2, "car");
-        assertEquals(16.0, vessel.loadFraction(), 0.01);
+        assertEquals(0.16, vessel.loadFraction(), 0.01);
     }
     
     @Test

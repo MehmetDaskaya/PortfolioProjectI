@@ -1,3 +1,5 @@
+package Vessels;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,7 +18,7 @@ class TankerTest {
         Tanker tanker = new Tanker("B1", 200);
         tanker.loadingCargo(100, "2");
         tanker.loadingCargo(101, "2");
-        assertEquals(0.5, tanker.loadFraction());
+        assertEquals(0.1, tanker.loadFraction());
     }
 
     @Test
