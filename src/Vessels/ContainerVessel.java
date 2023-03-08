@@ -15,6 +15,10 @@ public class ContainerVessel extends Vessel {
 			System.out.println("Incorrect String!");
 			return;
 		}
+		if (number <= 0) {
+			System.out.println("Invalid number");
+			return;
+		}
 		if (number + used > numContainers) {
 			System.out.println("Number too big for this container vessel");
 		} else {

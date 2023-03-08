@@ -14,6 +14,10 @@ public class RoRoVessel extends Vessel {
 	public void loadingCargo(int number, String s) {
 		int length
 				= 0;
+		if (number <= 0) {
+			System.out.println("Invalid number");
+			return;
+		}
 		if (s.equals("car")) {
 			length = 8;
 		} else if (s.equals("truck")) {
